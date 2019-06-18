@@ -120,7 +120,6 @@ void producto_cruz() {
 		int j = id/N2;
 		for(int p=0; p<N2; p++) C[i][j]+=A[i][p]*B[p][j];
 	}
-	
 	cout << "Resultado Producto Cruz:" << endl;
 	imprimir(C, N1, N3);
 }
