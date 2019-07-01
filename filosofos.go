@@ -16,7 +16,7 @@ func filosofo(i int, turnoBuff chan int, tenedores []sync.Mutex, cantFilosofos i
 		tenedores[i].Lock()
 		tenedores[(i+1)%cantFilosofos].Lock()
 		fmt.Println("#", i, "comiendo...")
-		n := (rand.Intn(100))
+		n := (rand.Intn(101))
 		time.Sleep(time.Duration(n) * time.Millisecond)
 		tenedores[i].Unlock()
 		tenedores[(i+1)%cantFilosofos].Unlock()
