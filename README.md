@@ -1,2 +1,2 @@
-# concurrente
-codigos concurrente :v
+# Concurrente
+codigos concurrente
